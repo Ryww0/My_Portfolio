@@ -1,0 +1,91 @@
+/* --- GENERAL --- */
+    /* --- initialisation de la page --- */
+    * {
+        margin: 0;
+    }
+    body {
+        font-family: 'SF UI text', sans-serif;
+    }
+    :root {
+        font-size: 16px;
+    }
+
+    /* --- paramètres globaux --- */
+    .container {
+        max-width: 85%;
+    }
+
+/* --- HEADER --- */
+    /* paramètrage du fond du header */
+    header {
+        background: url(../images/work.jpg) no-repeat fixed; /* mise en place de l'image + parallax */
+        height: 800px;
+        display: flex; /* positionnement du texte dans le header */
+        justify-content: center; /* centrage horizontal */
+        align-items: center; /* centrage vertical */
+    }
+
+    /* élèments du header */
+    .header-text {
+        font-variant: small-caps;
+        color: #fff;
+        text-align: center; /*justification du texte*/
+        vertical-align: middle;
+        line-height: 1.2;
+    }
+    .header-text h1 {
+        font-size: 3rem;
+    }
+    .header-text h2 {
+        font-size: 1.6rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------- */
+.test {
+    border: solid 1px red; /*border for visual test*/
+}
+.test2 {
+    border: solid 1px aqua; /*border for visual test*/
+}
+.test3 {
+    border: solid 1px green; /*border for visual test*/
+}
