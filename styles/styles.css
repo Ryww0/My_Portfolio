@@ -13,7 +13,21 @@
     /* --- paramètres globaux --- */
     .container {
         max-width: 85%;
+        margin: auto; /* centrage horizontal du container */
     }
+        /* --- polices --- */
+        h2 {
+            font-size: 4.8rem;
+            font-variant: small-caps;
+        }
+        h3 {
+            font-size: 2.5rem;
+            font-variant: small-caps;
+        }
+        p {
+            font-size: 1.5rem;
+            text-align: justify;
+        }
 
 /* --- HEADER --- */
     /* paramètrage du fond du header */
@@ -25,7 +39,7 @@
         align-items: center; /* centrage vertical */
     }
 
-    /* élèments du header */
+    /* --- élèments du header --- */
     .header-text {
         font-variant: small-caps;
         color: #fff;
@@ -38,6 +52,31 @@
     }
     .header-text h2 {
         font-size: 1.6rem;
+    }
+
+/* --- MAIN --- */
+    /* --- section me --- */
+    .me {
+        display: flex;
+        justify-content: space-between;
+        margin: 60px auto;
+        border-top: solid 8px black;
+        border-left: solid 8px black;
+        height: 800px;
+    }
+    .me-title {
+        /* width: 35%; */
+        transform: rotate(-90deg);
+        text-align: end;
+        height: 20%;
+    }
+    .me-content {
+        width: 50%;
+        padding: 90px;
+    }
+    .me-content h3 {
+        text-align: center;
+        margin-bottom: 30px;
     }
 
 
