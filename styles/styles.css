@@ -78,6 +78,33 @@
         text-align: center;
         margin-bottom: 30px;
     }
+    .me-content P {
+        margin-bottom: 50%;
+    }
+    .github-logo {
+        width: 5%;
+        height: auto;
+    }
+    .insta-logo {
+        width: 5%;
+        height: auto;
+    }
+    .twitter-logo {
+        width: 5%;
+        height: auto;
+    }
+    .arrow {
+        width: 6%;
+        height: auto;
+        float: right;
+    }
+    .arrow:hover .me-content {
+        background-color: rgba(0, 0, 0, 1); /* a finir*/
+    }
+    .socials a {
+       margin: 10px;
+    }
+
 
 
 
