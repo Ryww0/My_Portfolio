@@ -98,9 +98,6 @@
         height: auto;
         float: right;
     }
-    .arrow:hover .me-content {
-        background-color: rgba(0, 0, 0, 1); /* a finir*/
-    }
     .socials a {
        margin: 10px;
     }
