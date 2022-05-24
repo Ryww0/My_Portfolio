@@ -14,9 +14,9 @@ const play = () => {
 
     index++;
 
-    // if (index > text.length) {
-    //     index = 0;
-    // }
+    if (index > text.length) {  // autotext en boucle
+        index = 0;
+    }
 
     clearInterval(timer);
     timer = setInterval(play, randomSpeed(50, 300));
