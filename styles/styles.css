@@ -62,7 +62,7 @@
         display: flex;
         justify-content: space-between;
         margin: 350px auto;
-        outline-top: solid 8px rgb(255, 255, 255);
+        /* outline-top: solid 8px rgb(255, 255, 255); */
         border-left: solid 8px rgb(255, 255, 255);
         height: 700px;
         color: #fff;
@@ -71,7 +71,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 400px;
+        width: 450px;
         height: 8px;
         background: rgb(255, 255, 255);
         content: "";
