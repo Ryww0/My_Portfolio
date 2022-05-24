@@ -5,6 +5,7 @@
     }
     body {
         font-family: 'SF UI text', sans-serif;
+        background-color: rgb(32, 32, 32);
     }
     :root {
         font-size: 16px;
@@ -12,7 +13,7 @@
 
     /* --- paramètres globaux --- */
     .container {
-        max-width: 85%;
+        max-width: 70%;
         margin: auto; /* centrage horizontal du container */
     }
         /* --- polices --- */
@@ -32,7 +33,7 @@
 /* --- HEADER --- */
     /* paramètrage du fond du header */
     header {
-        background: url(../images/work.jpg) no-repeat fixed; /* mise en place de l'image + parallax */
+        background: url(../images/work.jpg) no-repeat; /* mise en place de l'image + parallax */
         height: 100vh;
         display: flex; /* positionnement du texte dans le header */
         justify-content: center; /* centrage horizontal */
@@ -57,22 +58,40 @@
 /* --- MAIN --- */
     /* --- section me --- */
     .me {
+        position: relative;
         display: flex;
         justify-content: space-between;
-        margin: 60px auto;
-        border-top: solid 8px black;
-        border-left: solid 8px black;
-        height: 800px;
+        margin: 350px auto;
+        outline-top: solid 8px rgb(255, 255, 255);
+        border-left: solid 8px rgb(255, 255, 255);
+        height: 700px;
+        color: #fff;
+    }
+    .me::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px;
+        height: 8px;
+        background: rgb(255, 255, 255);
+        content: "";
     }
     .me-title {
         /* width: 35%; */
         transform: rotate(-90deg);
         text-align: end;
         height: 20%;
+        position: relative;
+        top: 250px;
+        left: 5px;
+        border-bottom: 1px solid white;
     }
     .me-content {
-        width: 50%;
-        padding: 90px;
+        width: 40%;
+        padding: 50px;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin: auto 0;
     }
     .me-content h3 {
         text-align: center;
@@ -88,6 +107,7 @@
     .insta-logo {
         width: 5%;
         height: auto;
+        color: white;
     }
     .twitter-logo {
         width: 5%;
