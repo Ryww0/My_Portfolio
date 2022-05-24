@@ -56,7 +56,8 @@
     }
 
 /* --- MAIN --- */
-    /* --- section me --- */
+    /* --- section me --- 
+    ========================================= */
     .me {
         position: relative;
         display: flex;
@@ -89,7 +90,7 @@
     .me-content {
         width: 40%;
         padding: 50px;
-        border-radius: 10px;
+        border-radius: 3px;
         margin-top: 20px;
         margin: auto 0;
     }
