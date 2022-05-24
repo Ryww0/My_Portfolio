@@ -98,7 +98,7 @@
         text-align: center;
         margin-bottom: 30px;
     }
-    .me-content P {
+    h3 + P {
         margin-bottom: 50%;
     }
     .github-logo {
@@ -115,12 +115,27 @@
         height: auto;
     }
     .arrow {
-        width: 6%;
+        width: 30%;
         height: auto;
         float: right;
     }
+    /* .arrow:hover, #dlcv {
+        visibility: visible;
+    } */
     .socials a {
        margin: 10px;
+    }
+    .me-content-links {
+        display: flex;
+        justify-content: space-between;
+    }
+    #dlcv {
+        font-size: 0.8rem;
+        /* visibility: hidden; */
+    }
+    .dlcv {
+        display: flex;
+        justify-content: space-evenly;
     }
 
 
