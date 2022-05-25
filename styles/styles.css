@@ -1,4 +1,5 @@
-/* --- GENERAL --- */
+/* --- GENERAL --- 
+================================================================================== */
     /* --- initialisation de la page --- */
     * {
         margin: 0;
@@ -30,7 +31,8 @@
             text-align: justify;
         }
 
-/* --- HEADER --- */
+/* --- HEADER --- 
+================================================================================== */
     /* paramètrage du fond du header */
     header {
         background: url(../images/work.jpg) no-repeat fixed; /* mise en place de l'image + parallax */
@@ -57,7 +59,7 @@
 
 /* --- MAIN --- */
     /* --- section me --- 
-    ========================================= */
+    =========================================================================== */
     .me {
         position: relative;
         display: flex;
