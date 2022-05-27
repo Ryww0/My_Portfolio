@@ -133,6 +133,7 @@
     #dlcv {
         font-size: 0.8rem;
         /* visibility: hidden; */
+        display: none;
     }
     .dlcv {
         display: flex;
