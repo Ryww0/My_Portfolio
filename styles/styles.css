@@ -66,7 +66,7 @@
         justify-content: space-between;
         margin: 350px auto;
         /* outline-top: solid 8px rgb(255, 255, 255); */
-        border-left: solid 8px rgb(255, 255, 255);
+        border-left: solid 3px rgb(255, 255, 255);
         height: 700px;
         color: #fff;
     }
@@ -75,7 +75,7 @@
         top: 0;
         left: 0;
         width: 450px;
-        height: 8px;
+        height: 3px;
         background: rgb(255, 255, 255);
         content: "";
     }
@@ -147,7 +147,7 @@
         justify-content: space-between;
         color: #fff;
         height: 50vh;
-        border-right: solid 8px white;
+        border-right: solid 3px white;
         padding: 80px;
         margin: 350px auto;
     }
@@ -156,7 +156,7 @@
         top: 0;
         right: 0;
         width: 450px;
-        height: 8px;
+        height: 3px;
         background: rgb(255, 255, 255);
         content: "";
     }
