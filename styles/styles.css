@@ -87,7 +87,6 @@
         position: relative;
         top: 250px;
         left: 5px;
-        border-bottom: 1px solid white;
     }
     .me-content {
         width: 40%;
@@ -143,12 +142,67 @@
     /* --- section skills --- 
     =========================================================================== */
     .skills {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
         color: #fff;
+        height: 50vh;
+        border-right: solid 8px white;
+        padding: 80px;
+        margin: 350px auto;
+    }
+    .skills::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 450px;
+        height: 8px;
+        background: rgb(255, 255, 255);
+        content: "";
     }
     .skills-title {
         transform: rotate(-90deg);
         text-align: end;
+        height: 10%;
+        position: relative;
+        top: 220px;
     }
+    .skills-content {
+        display: flex;
+        justify-content: space-between;
+        /* position: relative; */
+        margin-left: 60px;
+    }
+    .skills-content p {
+        font-size: 0.9rem;
+        /* padding: 50px; */
+    }
+    .rot-skills {
+        position: absolute;
+        transform: rotate(-90deg);
+        text-align: end;
+        height: 5%;
+    }
+    .skills-container {
+        display: flex;
+        width: 40%;
+    }
+    .front {
+        position: absolute;
+        left: -15px;
+        top: 169px;
+    }
+    .graphisme {
+        position: absolute;
+        top: 173px;
+        left: 430px;
+    }
+
+
+
+
+
+
 
 
 
@@ -198,3 +252,6 @@
 .test3 {
     border: solid 1px green; /*border for visual test*/
 }
+/* .scrolltest {
+    height: 5000px;
+} */
