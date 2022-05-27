@@ -210,13 +210,13 @@
     }
     .front {
         position: absolute;
-        left: -15px;
+        left: -20px;
         top: 169px;
     }
     .graphisme {
         position: absolute;
         top: 173px;
-        left: 430px;
+        left: 425px;
     }
 
 
