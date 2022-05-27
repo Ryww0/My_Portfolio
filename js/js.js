@@ -3,15 +3,18 @@ function chbg(color) {
 }
 
 function show() {
-    var txt = document.getElementById('dlcv');
+    let txt = document.getElementById('dlcv');
 
     if(txt) {
-        txt.style.display = 'block';
+        txt.style.display = 'inline-block';
+        txt.translate = (-500, 0);
+        txt.duration = 1200;
+        
     }
 }
 
 function hide() {
-    var txt = document.getElementById('dlcv');
+    let txt = document.getElementById('dlcv');
 
     if(txt) {
         txt.style.display = 'none';

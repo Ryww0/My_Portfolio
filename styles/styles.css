@@ -133,11 +133,31 @@
     #dlcv {
         font-size: 0.8rem;
         /* visibility: hidden; */
+        position: absolute;
         display: none;
+        animation: reveal 300ms ease;
+        color: rgba(255, 255, 255, 0.501);
+        text-shadow: 1px 1px 5px black;
+    }
+    @keyframes reveal {
+        0% {
+            opacity: 0;
+            transform: translateX(-10px);
+        }
+        80% {
+            opacity: 0.2;
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
     }
     .dlcv {
+        width: 500px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        align-items: center;
     }
 
     /* --- section skills --- 
@@ -198,12 +218,6 @@
         top: 173px;
         left: 430px;
     }
-
-
-
-
-
-
 
 
 
