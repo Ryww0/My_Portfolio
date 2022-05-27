@@ -140,7 +140,15 @@
         justify-content: space-evenly;
     }
 
-
+    /* --- section skills --- 
+    =========================================================================== */
+    .skills {
+        color: #fff;
+    }
+    .skills-title {
+        transform: rotate(-90deg);
+        text-align: end;
+    }
 
 
 
