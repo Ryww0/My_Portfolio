@@ -20,3 +20,11 @@ function hide() {
         txt.style.display = 'none';
     }
 }
+
+function chbgSK1(color) {
+    document.getElementById('front').style.backgroundColor = color;
+}
+
+function chbgSK2(color) {
+    document.getElementById('graphisme').style.backgroundColor = color;
+}
