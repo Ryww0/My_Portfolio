@@ -56,6 +56,19 @@
     .header-text h2 {
         font-size: 1.6rem;
     }
+    .logo {
+        width: 3%;
+        height: auto;
+        background-color: rgb(32, 32, 32);
+        border-radius: 50%;
+        position: fixed;
+        top: 50px;
+        right: 50px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.559);
+    }
+    .logo:hover {
+        filter: brightness(1.3);
+    }
 
 /* --- MAIN --- */
     /* --- section me --- 
