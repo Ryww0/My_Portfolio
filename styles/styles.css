@@ -78,7 +78,7 @@
         position: relative;
         display: flex;
         justify-content: space-between;
-        margin: 350px auto;
+        margin: 400px auto;
         /* outline-top: solid 8px rgb(255, 255, 255); */
         border-left: solid 3px rgb(255, 255, 255);
         height: 700px;
@@ -184,7 +184,7 @@
         height: 50vh;
         border-right: solid 3px white;
         padding: 80px;
-        margin: 350px auto;
+        margin: 400px auto;
     }
     .skills::after {
         position: absolute;
@@ -241,10 +241,75 @@
         float: right;
     }
 
+    /* --- section portfolio --- 
+    =========================================================================== */
+    .portfolio {
+        margin: 400px auto;
+        color: #fff;
+    }
+    .portfolio-title-content {
+        display: flex;
+    }
+    .portfolio-title {
+        width: 85%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: end;
+        padding: 0 0 20px 0;
+    }
+    .empty-title-block{
+        width: 15%;
+        height: 220px;
+        outline: 3px solid #fff;
+        margin-bottom: 3px;
+    }
 
-
-
-
+    .barres {
+        width: 135%;
+        height: auto;
+        position: relative;
+        left: -20px;
+        top: -30px;
+    }
+    .portfolio-content {
+        display: flex;
+        flex-wrap: wrap;
+        outline: 3px solid #fff;
+        margin-bottom: 3px;
+    }
+    .main-block {
+        width: 100%;
+        height: 130px;
+        display: flex;
+        align-items: flex-end;
+        padding-left: 100px;
+        padding-bottom: 30px;
+    }
+    .main-block2 {
+        width: 100%;
+        height: 130px;
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        padding-right: 100px;
+        padding-bottom: 30px;
+    }
+    .link-block {
+        height: 50px; /*tes visuel*/
+        width: 20%;
+    }
+    .empty-block {
+        outline: 3px solid #fff;
+        height: 50px; /*test visuel*/
+        width: 80%;
+        /* background-color: #fff; */
+    }
+    .portfolio-arrow {
+        float: right;
+        width: 18%;
+        height: auto;
+    }
 
 
 
