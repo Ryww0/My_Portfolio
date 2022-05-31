@@ -3,6 +3,10 @@
     /* --- initialisation de la page --- */
     * {
         margin: 0;
+        padding: 0;
+    }
+    ul {
+        list-style-type: none;
     }
     body {
         font-family: 'SF UI text', sans-serif;
@@ -309,6 +313,43 @@
         float: right;
         width: 18%;
         height: auto;
+    }
+
+/* --- footer ---  */
+    footer {
+        color: #fff;
+    }
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+        padding: 20px 0;
+    }
+    .left-part {
+        width: 15%;
+        margin: auto 0;
+    }
+    .left-part li {
+        display: inline-block; /*permet d'aligner les li sur la même ligne*/
+        font-size: 0.9rem;
+    }
+    .bright {
+        border-right: 1px solid #fff;
+        padding-right: 5px;
+    }
+    .right-part {
+        width: 10%;
+        text-align: center;
+    }
+    .right-part a img {
+       width: 20%;
+       margin: 5px;
+    }
+    .allrights p {
+        color: rgba(255, 255, 255, 0.35);
+        font-size: 0.6rem;
+        margin: 20px 0;
+        text-align: center;
     }
 
 
