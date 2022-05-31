@@ -121,16 +121,15 @@
         margin-bottom: 50%;
     }
     .github-logo {
-        width: 8%;
+        width: 100%;
         height: auto;
     }
     .insta-logo {
-        width: 8%;
+        width: 100%;
         height: auto;
-        color: white;
     }
     .twitter-logo {
-        width: 8%;
+        width: 100%;
         height: auto;
     }
     .arrow {
@@ -138,11 +137,16 @@
         height: auto;
         float: right;
     }
-    /* .arrow:hover, #dlcv {
-        visibility: visible;
-    } */
+    .socials {
+        display: flex;
+    }
     .socials a {
-       margin: 10px;
+        width: 40px;
+        display: inline-block;
+        margin: auto 10px;
+    }
+    .socials a:hover {
+        transform: scale(1.05);
     }
     .me-content-links {
         display: flex;
@@ -150,7 +154,6 @@
     }
     #dlcv {
         font-size: 0.8rem;
-        /* visibility: hidden; */
         position: absolute;
         display: none;
         animation: reveal 300ms ease;
@@ -172,7 +175,7 @@
 
     }
     .dlcv {
-        width: 500px;
+        width: 200px;
         display: flex;
         justify-content: space-between;
         align-items: center;
