@@ -342,7 +342,29 @@
     }
 
 
-/* RESPONSIVE version mobile 780px*/
+/* RESPONSIVE version mobile 400px*/
+@media screen and (max-width: 768px) {
+    :root {
+        font-size: 8px;
+    }
+
+
+    /* section me */
+    .me {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        border-left: solid 0px rgb(255, 255, 255);
+    }
+    .me::after {
+        display: none;
+    }
+    .me-title {
+        margin: 0;
+        writing-mode: horizontal-tb;
+        height: auto;
+    }
+}
 
 
 
