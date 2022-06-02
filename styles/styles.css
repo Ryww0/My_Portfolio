@@ -216,7 +216,6 @@
     }
     .skills-content p {
         font-size: 0.9rem;
-        /* padding: 50px; */
     }
     .rot-skills {
         writing-mode: vertical-rl;
@@ -401,6 +400,9 @@
     .skills-content {
         flex-direction: column;
         width: 100%;
+    }
+    .skills-content p {
+        font-size: 1.3rem;
     }
     .skills-container {
         width: auto;
