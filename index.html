@@ -1,191 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA  -Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/autotext.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA  -Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/autotext.css" />
+    <link rel="stylesheet" href="./styles/cursor.css" />
     <!-- favicon (icone qui apparait dans l'onglet du navigateur) -->
-    <link rel="icon" type="image/png" href="./images/kywbe_logo.png">
+    <link rel="icon" type="image/png" href="./images/kywbe_logo.png" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="cursor"></div>
     <!-- HEADER 
     ===================================================================
     =================================================================== -->
     <header id="header">
-        <a href="#header"><img class="logo" src="./images/kywbe_logo.png" alt="logo-du-site"></a>
-        <div class="header-text">
-            <h2>&lt;hello/&gt;</h2>
-            <h1 id="autotext">laurent chaitas</h1>
-            <h2>développeur web</h2>
-        </div>  
+      <a href="#header"
+        ><img class="logo" src="./images/kywbe_logo.png" alt="logo-du-site"
+      /></a>
+      <div class="header-text">
+        <h2>&lt;hello/&gt;</h2>
+        <h1 id="autotext">laurent chaitas</h1>
+        <h2>développeur web</h2>
+      </div>
     </header>
-
 
     <!-- MAIN 
     ===================================================================
     =================================================================== -->
     <main>
-        <!-- section présentation de qui je suis 
+      <!-- section présentation de qui je suis 
         =================================================================== -->
-        <section class="me container">
-            <div class="me-title">
-                <h3>自分</h3>
-                <h2>qui suis-je ?</h2>                
+      <section class="me container">
+        <div class="me-title">
+          <h3>自分</h3>
+          <h2>qui suis-je ?</h2>
+        </div>
+        <div id="me-content" class="me-content">
+          <h3>je suis</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus
+            cursus turpis magna duis sagittis sollicitudin semper diam. Nulla
+            facilisis duis turpis neque, nunc, sed ultrices. In donec fusce
+            pulvinar odio feugiat urna.
+          </p>
+          <div class="me-content-links">
+            <div class="socials">
+              <a href="https://github.com/Ryww0" target="_blank"
+                ><img
+                  class="github-logo"
+                  src="images/github.svg"
+                  alt="logo-github"
+              /></a>
+              <a href="#"
+                ><img
+                  class="insta-logo"
+                  src="images/insta.svg"
+                  alt="logo-instagram"
+              /></a>
+              <a href="#"
+                ><img
+                  class="twitter-logo"
+                  src="images/twitter.svg"
+                  alt="logo-twitter"
+              /></a>
             </div>
-            <div id="me-content" class="me-content">
-                <h3>je suis</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit. Risus cursus turpis magna 
-                    duis sagittis sollicitudin semper diam. Nulla 
-                    facilisis duis turpis neque, nunc, sed 
-                    ultrices. In donec fusce pulvinar odio feugiat 
-                    urna.
-                </p>
-                <div class="me-content-links">
-                    <div class="socials">
-                        <a href="https://github.com/Ryww0" target="_blank"><img class="github-logo" src="images/github.svg" alt="logo-github"></a>
-                        <a href="#"><img class="insta-logo" src="images/insta.svg" alt="logo-instagram"></a>
-                        <a href="#"><img class="twitter-logo" src="images/twitter.svg" alt="logo-twitter"></a>
-                    </div>
-                    <div class="dlcv">
-                        <p id="dlcv">télécharger mon cv</p>
-                        <a href="./images/LaurentChaitasCV.pdf" download="Laurent_Chaitas_CV"><img onmouseover="chbg('rgba(255,255,255,0.08)'), show(), reveal()" onmouseout="chbg('rgba(255,255,255,0)'), hide()" class="arrow" src="images/arrow.svg" alt="arrow"></a>
-                    </div>
-                </div>
+            <div class="dlcv">
+              <p id="dlcv">télécharger mon cv</p>
+              <a
+                href="./images/LaurentChaitasCV.pdf"
+                download="Laurent_Chaitas_CV"
+                ><img
+                  onmouseover="chbg('rgba(255,255,255,0.08)'), show(), reveal()"
+                  onmouseout="chbg('rgba(255,255,255,0)'), hide()"
+                  class="arrow"
+                  src="images/arrow.svg"
+                  alt="arrow"
+              /></a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- section SKILLS 
+      <!-- section SKILLS 
         =================================================================== -->
-        <section class="skills container">
-            <div class="skills-content">
-                <div id="front" class="skills-container">
-                    <div class="rot-skills">
-                        <h3>front end</h3>
-                        <h4>フロント エンド </h4>
-                    </div>
-                    <div class="skills-container-right">
-                        <p>
-                            Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing elit. 
-                            Risus cursus turpis magna 
-                            duis sagittis sollicitudin 
-                            semper diam. Nulla facilisis 
-                            duis turpis neque, nunc, 
-                            sed ultrices. In donec fusce 
-                            pulvinar odio feugiat urna.
-                        </p>
-                        <a href="#"><img onmouseover="chbgSK1('rgba(255,255,255,0.08)')" onmouseout="chbgSK1('rgba(255,255,255,0)')" src="images/arrow.svg" class="arrow2" alt="arrow"></a>
-                    </div>
-                </div>
-                <div id="graphisme" class="skills-container">
-                    <div class="rot-skills">
-                        <h3>graphisme</h3>
-                        <h4>グラフィックデザイン</h4>
-                    </div>
-                    <div class="skills-container-right">
-                        <p>
-                            Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing elit. 
-                            Risus cursus turpis magna 
-                            duis sagittis sollicitudin 
-                            semper diam. Nulla facilisis 
-                            duis turpis neque, nunc, 
-                            sed ultrices. In donec fusce 
-                            pulvinar odio feugiat urna.
-                        </p>
-                        <a href="#"><img onmouseover="chbgSK2('rgba(255,255,255,0.08)')" onmouseout="chbgSK2('rgba(255,255,255,0)')" src="images/arrow.svg" class="arrow2" alt="arrow"></a>
-                    </div>
-                </div>
+      <section class="skills container">
+        <div class="skills-content">
+          <div id="front" class="skills-container">
+            <div class="rot-skills">
+              <h3>front end</h3>
+              <h4>フロント エンド</h4>
             </div>
-            <div class="skills-title">
-                <h3>スキル</h3>
-                <h2>compétences</h2>
+            <div class="skills-container-right">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus
+                cursus turpis magna duis sagittis sollicitudin semper diam.
+                Nulla facilisis duis turpis neque, nunc, sed ultrices. In donec
+                fusce pulvinar odio feugiat urna.
+              </p>
+              <a href="#"
+                ><img
+                  onmouseover="chbgSK1('rgba(255,255,255,0.08)')"
+                  onmouseout="chbgSK1('rgba(255,255,255,0)')"
+                  src="images/arrow.svg"
+                  class="arrow2"
+                  alt="arrow"
+              /></a>
             </div>
-        </section>
-        <div class="scrolltest"></div>
+          </div>
+          <div id="graphisme" class="skills-container">
+            <div class="rot-skills">
+              <h3>graphisme</h3>
+              <h4>グラフィックデザイン</h4>
+            </div>
+            <div class="skills-container-right">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus
+                cursus turpis magna duis sagittis sollicitudin semper diam.
+                Nulla facilisis duis turpis neque, nunc, sed ultrices. In donec
+                fusce pulvinar odio feugiat urna.
+              </p>
+              <a href="#"
+                ><img
+                  onmouseover="chbgSK2('rgba(255,255,255,0.08)')"
+                  onmouseout="chbgSK2('rgba(255,255,255,0)')"
+                  src="images/arrow.svg"
+                  class="arrow2"
+                  alt="arrow"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="skills-title">
+          <h3>スキル</h3>
+          <h2>compétences</h2>
+        </div>
+      </section>
+      <div class="scrolltest"></div>
 
-        <!-- section PORTFOLIO
+      <!-- section PORTFOLIO
         =================================================================== -->
-        <section class="portfolio container">
-            <div class="portfolio-title-content">
-                <div class="portfolio-title">
-                    <h3>ポートフォリオ</h3>
-                    <h2>portfolio</h2>
-                </div>
-                <div class="empty-title-block">
-                    <img class="barres" src="./images/barres.png" alt="barres_obliques">
-                </div>
-            </div>
-            <div class="portfolio-content">
-                <div class="main-block">
-                    <h3>project name</h3>
-                </div>
-                <div class="link-block">
-                    <a href="#"><img class="portfolio-arrow" src="./images/arrow.svg" alt="arrow"></a>
-                </div>
-                <div class="empty-block">
-                </div>
-            </div>
-            <div class="portfolio-content">
-                <div class="main-block2">
-                    <h3>project name</h3>
-                </div>
-                <div class="empty-block">
-
-                </div>
-                <div class="link-block">
-                    <a href="#"><img class="portfolio-arrow" src="./images/arrow.svg" alt="arrow"></a>
-                </div>
-            </div>
-            <div class="portfolio-content">
-                <div class="main-block">
-                    <h3>project name</h3>
-                </div>
-                <div class="link-block">
-                    <a href="#"><img class="portfolio-arrow" src="./images/arrow.svg" alt="arrow"></a>
-                </div>
-                <div class="empty-block">
-
-                </div>
-            </div>
-        </section>
+      <section class="portfolio container">
+        <div class="portfolio-title-content">
+          <div class="portfolio-title">
+            <h3>ポートフォリオ</h3>
+            <h2>portfolio</h2>
+          </div>
+          <div class="empty-title-block">
+            <img
+              class="barres"
+              src="./images/barres.png"
+              alt="barres_obliques"
+            />
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <div
+            class="main-block"
+            onmouseover="potfolioHover()"
+            onmouseout="potfolioOut()"
+          >
+            <h3>project name</h3>
+            <ul>
+              <li>project subject</li>
+              <li>project subject</li>
+              <li>project subject</li>
+              <li>project subject</li>
+              <li>project subject</li>
+            </ul>
+          </div>
+          <div
+            class="link-block"
+            onmouseover="potfolioHover()"
+            onmouseout="potfolioOut()"
+          >
+            <a href="#"
+              ><img
+                class="portfolio-arrow"
+                src="./images/arrow.svg"
+                alt="arrow"
+            /></a>
+          </div>
+          <div class="empty-block"></div>
+        </div>
+        <div class="portfolio-content">
+          <div class="main-block2">
+            <h3>project name</h3>
+            <ul>
+              <li>project subject</li>
+              <li>project subject</li>
+              <li>project subject</li>
+              <li>project subject</li>
+              <li>project subject</li>
+            </ul>
+          </div>
+          <div class="empty-block"></div>
+          <div class="link-block">
+            <a href="#"
+              ><img
+                class="portfolio-arrow"
+                src="./images/arrow.svg"
+                alt="arrow"
+            /></a>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <div class="main-block">
+            <h3>project name</h3>
+            <ul>
+              <li>project subject</li>
+              <li>project subject</li>
+              <li>project subject</li>
+              <li>project subject</li>
+              <li>project subject</li>
+            </ul>
+          </div>
+          <div class="link-block">
+            <a href="#"
+              ><img
+                class="portfolio-arrow"
+                src="./images/arrow.svg"
+                alt="arrow"
+            /></a>
+          </div>
+          <div class="empty-block"></div>
+        </div>
+      </section>
     </main>
-
 
     <!-- FOOTER 
     ===================================================================
     =================================================================== -->
     <footer>
-        <div class="footer-content container">
-            <div class="left-part">
-                <ul>
-                    <li class="bright">contact</li>
-                    <li>mentions légales</li>
-                </ul>
-            </div>
-            <div class="right-part">
-                <a href="https://github.com/Ryww0" target="_blank"><img class="github-logo" src="images/github.svg" alt="logo-github"></a>
-                <a href="#"><img class="insta-logo" src="images/insta.svg" alt="logo-instagram"></a>
-                <a href="#"><img class="twitter-logo" src="images/twitter.svg" alt="logo-twitter"></a>
-            </div>
+      <div class="footer-content container">
+        <div class="left-part">
+          <ul>
+            <li class="bright">contact</li>
+            <li>mentions légales</li>
+          </ul>
         </div>
-        <div class="allrights">
-            <p>2022 © copyright - laurentchaitas.fr</p>
+        <div class="right-part">
+          <a href="https://github.com/Ryww0" target="_blank"
+            ><img class="github-logo" src="images/github.svg" alt="logo-github"
+          /></a>
+          <a href="#"
+            ><img
+              class="insta-logo"
+              src="images/insta.svg"
+              alt="logo-instagram"
+          /></a>
+          <a href="#"
+            ><img
+              class="twitter-logo"
+              src="images/twitter.svg"
+              alt="logo-twitter"
+          /></a>
         </div>
+      </div>
+      <div class="allrights">
+        <p>2022 © copyright - laurentchaitas.fr</p>
+      </div>
     </footer>
 
     <!-- script for js -->
     <script src="./js/js.js"></script>
     <script src="./js/autotext.js"></script>
-</body>
+    <script src="./js/cursor.js"></script>
+  </body>
 </html>
-
-
 
 <!-- https://www.youtube.com/watch?v=2decTjcdDKo    défilement au scroll
      https://www.youtube.com/watch?v=Ny3iznrppnU    cours 7h de js
