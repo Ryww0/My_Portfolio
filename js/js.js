@@ -40,3 +40,4 @@ function potfolioOut() {
   newStyle.classList.remove("portfolio-content-hover");
   newStyle2.classList.remove("portfolio-content-hover");
 }
+// queryselecall foreach
