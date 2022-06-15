@@ -14,6 +14,20 @@
   </head>
   <body>
     <div class="cursor"></div>
+    <nav>
+      <div class="menu">
+        <span class="bar"></span>
+        <span id="longer-bar" class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="menu-links">
+        <ul class="small-caps">
+          <li><a href="#me">qui suis-je</a></li>
+          <li><a href="#skills">mes compétences</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+        </ul>
+      </div>
+    </nav>
     <!-- HEADER 
     ===================================================================
     =================================================================== -->
@@ -34,7 +48,7 @@
     <main>
       <!-- section présentation de qui je suis 
         =================================================================== -->
-      <section class="me container">
+      <section class="me container" id="me">
         <div class="me-title">
           <h3>自分</h3>
           <h2>qui suis-je ?</h2>
@@ -87,7 +101,7 @@
 
       <!-- section SKILLS 
         =================================================================== -->
-      <section class="skills container">
+      <section class="skills container" id="skills">
         <div class="skills-content">
           <div id="front" class="skills-container">
             <div class="rot-skills">
@@ -143,7 +157,7 @@
 
       <!-- section PORTFOLIO
         ==================================================================== -->
-      <section class="portfolio container">
+      <section class="portfolio container" id="portfolio">
         <div class="portfolio-title-content">
           <div class="portfolio-title">
             <h3>ポートフォリオ</h3>
@@ -158,36 +172,30 @@
           </div>
         </div>
         <div class="portfolio-content">
-          <div
-            class="main-block"
-            onmouseover="potfolioHover()"
-            onmouseout="potfolioOut()"
-          >
-            <h3>project name</h3>
-            <ul>
-              <li>project subject</li>
-              <li>project subject</li>
-              <li>project subject</li>
-              <li>project subject</li>
-              <li>project subject</li>
-            </ul>
-          </div>
-          <div
-            class="link-block"
-            onmouseover="potfolioHover()"
-            onmouseout="potfolioOut()"
-          >
-            <a href="#"
-              ><img
-                class="portfolio-arrow"
-                src="./images/arrow.svg"
-                alt="arrow"
-            /></a>
+          <div class="">
+            <div class="main-block new-style">
+              <h3>project name</h3>
+              <ul>
+                <li>project subject</li>
+                <li>project subject</li>
+                <li>project subject</li>
+                <li>project subject</li>
+                <li>project subject</li>
+              </ul>
+            </div>
+            <div class="link-block new-style">
+              <a href="#"
+                ><img
+                  class="portfolio-arrow"
+                  src="./images/arrow.svg"
+                  alt="arrow"
+              /></a>
+            </div>
           </div>
           <div class="empty-block"></div>
         </div>
         <div class="portfolio-content">
-          <div class="main-block2">
+          <div class="main-block2 new-style">
             <h3>project name</h3>
             <ul>
               <li>project subject</li>
@@ -198,7 +206,7 @@
             </ul>
           </div>
           <div class="empty-block"></div>
-          <div class="link-block">
+          <div class="link-block new-style">
             <a href="#"
               ><img
                 class="portfolio-arrow"
@@ -208,7 +216,7 @@
           </div>
         </div>
         <div class="portfolio-content">
-          <div class="main-block">
+          <div class="main-block new-style">
             <h3>project name</h3>
             <ul>
               <li>project subject</li>
@@ -218,7 +226,7 @@
               <li>project subject</li>
             </ul>
           </div>
-          <div class="link-block">
+          <div class="link-block new-style">
             <a href="#"
               ><img
                 class="portfolio-arrow"

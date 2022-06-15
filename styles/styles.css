@@ -8,6 +8,9 @@
 ul {
   list-style-type: none;
 }
+a {
+  text-decoration: none;
+}
 body {
   font-family: "SF UI text", sans-serif;
   background-color: #202020;
@@ -24,6 +27,10 @@ html {
   max-width: 70%;
   margin: auto; /* centrage horizontal du container */
 }
+.small-caps {
+  font-variant: small-caps;
+}
+
 /* --- polices --- */
 h2 {
   font-size: 4.8rem;
@@ -36,6 +43,71 @@ h3 {
 p {
   font-size: 1.5rem;
   text-align: justify;
+}
+/* --- NAVBAR --- 
+================================================================================== */
+nav {
+  position: fixed;
+  /* background-color: none; */
+  /* background: #000; */
+  height: 100vh;
+  width: 400px;
+  margin: 0;
+  transition: 200ms ease;
+}
+nav.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  z-index: 2;
+}
+span {
+  width: 60px;
+  margin: 10px 0;
+  height: 5px;
+  background-color: #fff;
+}
+.menu {
+  cursor: pointer;
+  /* background: #000; */
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  margin: 500px 50px;
+}
+.menu:hover #longer-bar {
+  width: 80px;
+  transition: 350ms ease;
+}
+.menu-links {
+  /* display: none; */
+  position: absolute;
+  top: 440px;
+  left: -150px;
+  line-height: 4;
+  transition: 200ms ease;
+}
+.menu-links.active {
+  left: 150px;
+}
+.bar {
+  transition: 500ms ease-in-out;
+}
+.menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.menu.active .bar:nth-child(1) {
+  transform: translateY(25px) rotate(45deg);
+}
+.menu.active .bar:nth-child(3) {
+  transform: translateY(-25px) rotate(-45deg);
+}
+.menu-links a {
+  display: inline-block;
+  color: #fff;
+}
+.menu-links a:hover {
+  filter: brightness(0.8);
+  transform: scale(1.1) !important;
 }
 
 /* --- HEADER --- 

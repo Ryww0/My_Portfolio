@@ -29,15 +29,31 @@ function chbgSK2(color) {
 }
 
 // hover portfolio
-let newStyle = document.querySelector(".main-block");
-let newStyle2 = document.querySelector(".link-block");
+let newStyle = document.querySelectorAll(".new-style");
 
-function potfolioHover() {
-  newStyle.classList.add("portfolio-content-hover");
-  newStyle2.classList.add("portfolio-content-hover");
+newStyle.forEach((div) => {
+  console.log(div);
+  div.addEventListener("mouseover", function (event) {
+    div.classList.add("portfolio-content-hover");
+  });
+});
+
+newStyle.forEach((div) => {
+  console.log(div);
+  div.addEventListener("mouseout", function (event) {
+    div.classList.remove("portfolio-content-hover");
+  });
+});
+
+// menu burger
+const burger = document.querySelector(".menu");
+const menu = document.querySelector(".menu-links");
+const navBg = document.querySelector("nav");
+
+burger.addEventListener("click", navMenu);
+
+function navMenu() {
+  burger.classList.toggle("active");
+  menu.classList.toggle("active");
+  navBg.classList.toggle("active");
 }
-function potfolioOut() {
-  newStyle.classList.remove("portfolio-content-hover");
-  newStyle2.classList.remove("portfolio-content-hover");
-}
-// queryselecall foreach
