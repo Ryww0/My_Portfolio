@@ -366,6 +366,7 @@ h3 + P {
   font-weight: 100;
   position: absolute;
   right: 20px;
+  text-align: end;
   /* color: #202020; */
 }
 .portfolio-content-hover {
