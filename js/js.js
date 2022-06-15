@@ -29,17 +29,17 @@ function chbgSK2(color) {
 }
 
 // hover portfolio
-let newStyle = document.querySelectorAll(".new-style");
+let newStyle = document.querySelectorAll(".portfolio-content");
+let empty = document.querySelectorAll(".empty-block");
 
 newStyle.forEach((div) => {
-  console.log(div);
   div.addEventListener("mouseover", function (event) {
     div.classList.add("portfolio-content-hover");
+    div.lastChild.classList.remove("portfolio-content-hover");
   });
 });
 
 newStyle.forEach((div) => {
-  console.log(div);
   div.addEventListener("mouseout", function (event) {
     div.classList.remove("portfolio-content-hover");
   });
