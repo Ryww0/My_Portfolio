@@ -1,0 +1,7 @@
+header {
+  background: url(../images/work.jpg) no-repeat fixed; /* mise en place de l'image + parallax */
+  height: 100vh;
+  display: flex; /* positionnement du texte dans le header */
+  justify-content: center; /* centrage horizontal */
+  align-items: center; /* centrage vertical */
+}
