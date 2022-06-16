@@ -35,7 +35,11 @@ let empty = document.querySelectorAll(".empty-block");
 newStyle.forEach((div) => {
   div.addEventListener("mouseover", function (event) {
     div.classList.add("portfolio-content-hover");
-    div.lastChild.classList.remove("portfolio-content-hover");
+  });
+});
+empty.forEach((div) => {
+  div.addEventListener("mouseover", function (event) {
+    div.classList.add("portfolio-content-hover-nope");
   });
 });
 
@@ -57,3 +61,15 @@ function navMenu() {
   menu.classList.toggle("active");
   navBg.classList.toggle("active");
 }
+
+//
+const checkbox = document.querySelector("button");
+
+checkbox.addEventListener("click", (event) => {
+  if (checkbox.classList.contains("on")) {
+    checkbox.setAttribute("aria-checked", "false");
+  } else {
+    checkbox.setAttribute("aria-checked", "true");
+  }
+  checkbox.classList.toggle("on");
+});

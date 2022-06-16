@@ -360,12 +360,16 @@ h3 + P {
   position: absolute;
   right: 20px;
   text-align: end;
-  /* color: #202020; */
+  color: #202020;
 }
 .portfolio-content-hover {
   background-color: #feefd0da;
   color: #202020;
   transition: 500ms ease-in-out;
+}
+.portfolio-content-hover-nope {
+  background-color: #202020;
+  color: #202020;
 }
 .main-block2 {
   position: relative;
@@ -381,7 +385,7 @@ h3 + P {
   font-weight: 100;
   position: absolute;
   left: 20px;
-  /* color: #202020; */
+  color: #202020;
 }
 .link-block {
   height: 50px; /*tes visuel*/
@@ -391,6 +395,8 @@ h3 + P {
   outline: 3px solid #fff;
   height: 50px; /*test visuel*/
   width: 80%;
+  background-color: #202020;
+  color: #202020;
   /* background-color: #fff; */
 }
 .portfolio-arrow {
@@ -434,6 +440,38 @@ footer {
   font-size: 0.6rem;
   margin: 20px 0;
   text-align: center;
+}
+
+.checkbox {
+  width: 52px;
+  height: 32px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  background-color: #49454f;
+  border-radius: 24px;
+  border: solid 2px #938f99;
+  transition: border-color 200ms, background-color 200ms;
+  cursor: pointer;
+}
+.checkbox::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 12px;
+  background-color: #938f99;
+  transition: width 200ms, height 200ms, transform 200ms, background-color 200ms;
+}
+.checkbox.on {
+  border-color: #d0bcff;
+  background-color: #d0bcff;
+}
+.checkbox.on::before {
+  background-color: #381e72;
+  width: 24px;
+  height: 24px;
+  transform: translateX(18px);
 }
 
 /* RESPONSIVE version mobile 400px*/
