@@ -73,3 +73,11 @@ checkbox.addEventListener("click", (event) => {
   }
   checkbox.classList.toggle("on");
 });
+
+// FIXME
+// function switch() {
+//   if(checkbox.attributes('aria-checked', "true")){
+//     document.body.classList.add('darker')
+//     document.body.classList.add('darker')
+//   }
+// }
