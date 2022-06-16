@@ -6,6 +6,9 @@ body {
 header {
   height: auto;
 }
+h1 {
+  font-size: 8rem;
+}
 .page-container {
   width: 85%;
   margin: auto;
@@ -40,8 +43,8 @@ header {
 .t-35m {
   top: -35px;
 }
-.t-7m {
-  top: -7px;
+.t-15m {
+  top: -15px;
 }
 .r-15m {
   right: -15px;
@@ -49,8 +52,8 @@ header {
 .b-15m {
   bottom: -15px;
 }
-.l-225m {
-  left: -225px;
+.l-240m {
+  left: -240px;
 }
 .mt-50 {
   margin-top: 50px;
