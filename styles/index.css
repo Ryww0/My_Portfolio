@@ -212,6 +212,7 @@ h3 + P {
   justify-content: end;
   padding: 0 0 20px 0;
 }
+/* FIXME */
 .empty-title-block {
   width: 15%;
   height: 220px;
@@ -219,6 +220,27 @@ h3 + P {
   margin-bottom: 3px;
 }
 
+/* .empty-title-block :nth-child(1) {
+  width: 50px;
+}
+.empty-title-block :nth-child(2) {
+  width: 110px;
+}
+.empty-title-block :nth-child(3) {
+  width: 170px;
+}
+.empty-title-block :nth-child(4) {
+  width: 220px;
+}
+.empty-title-block :nth-child(5) {
+  width: 170px;
+}
+.empty-title-block :nth-child(6) {
+  width: 110px;
+}
+.empty-title-block :nth-child(7) {
+  width: 50px;
+} */
 .barres {
   width: 135%;
   height: auto;
@@ -226,6 +248,7 @@ h3 + P {
   left: -20px;
   top: -30px;
 }
+/* --------------- */
 .portfolio-content {
   display: flex;
   flex-wrap: wrap;
@@ -280,6 +303,7 @@ h3 + P {
 .main-block2 h3 {
   animation: floatToRight 5s ease-in-out infinite;
 }
+/* FIXME let's try a better floating effect */
 @keyframes floatToLeft {
   0% {
     transform: translateX(0);
