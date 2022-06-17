@@ -67,10 +67,12 @@ checkbox.addEventListener("click", (event) => {
   if (checkbox.classList.contains("on")) {
     checkbox.setAttribute("aria-checked", "false");
     root.style.setProperty("--fore", "#fff");
+    root.style.setProperty("--fore2", "#ffffff5f");
     root.style.setProperty("--back", "#202020");
   } else {
     checkbox.setAttribute("aria-checked", "true");
     root.style.setProperty("--fore", "#372703");
+    root.style.setProperty("--fore2", "#3727035f");
     root.style.setProperty("--back", "#feefd0da");
   }
   checkbox.classList.toggle("on");

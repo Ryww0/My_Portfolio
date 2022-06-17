@@ -44,12 +44,6 @@ header {
   background: var(--fore);
   content: "";
 }
-.me-title {
-  writing-mode: vertical-rl;
-  height: 92%;
-  margin: auto 0;
-  margin-left: 200px;
-}
 .me-content {
   width: 40%;
   padding: 50px;

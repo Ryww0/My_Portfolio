@@ -7,6 +7,7 @@
 :root {
   font-size: 16px;
   --fore: #ffffff;
+  --fore2: #ffffff5f;
   --back: #202020;
 }
 ul {
@@ -72,6 +73,15 @@ p {
   transform: scale(105%);
 }
 
+/* --- title vertical --- */
+/* ================================================================== */
+.me-title {
+  writing-mode: vertical-rl;
+  height: 92%;
+  margin: auto 0;
+  margin-left: 200px;
+}
+
 /* --- NAVBAR --- */
 /* ================================================================== */
 nav {
@@ -84,9 +94,8 @@ nav {
   transition: 200ms ease;
 }
 nav.active {
-  background-color: var(--fore);
   backdrop-filter: blur(4px);
-  opacity: 0.4;
+  background-color: var(--fore2);
   z-index: 2;
 }
 nav.active span {
