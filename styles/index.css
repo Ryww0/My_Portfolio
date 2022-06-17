@@ -1,7 +1,353 @@
+/* --- HEADER --- 
+================================================================================== */
+/* paramètrage du fond du header */
 header {
   background: url(../images/work.jpg) no-repeat fixed; /* mise en place de l'image + parallax */
   height: 100vh;
   display: flex; /* positionnement du texte dans le header */
   justify-content: center; /* centrage horizontal */
   align-items: center; /* centrage vertical */
+}
+/* --- élèments du header --- */
+.header-text {
+  font-variant: small-caps;
+  color: var(--fore);
+  text-align: center; /*justification du texte*/
+  vertical-align: middle;
+  line-height: 1.2;
+}
+.header-text h1 {
+  font-size: 3rem;
+}
+.header-text h2 {
+  font-size: 1.6rem;
+}
+.logo {
+  z-index: 1;
+  width: 3%;
+  height: auto;
+  background-color: var(--back);
+  border-radius: 50%;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.56);
+}
+.logo:hover {
+  filter: brightness(1.3);
+  transform: scale(105%);
+}
+
+/* --- MAIN --- */
+/* --- section me --- 
+    =========================================================================== */
+.me {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 400px auto;
+  border-left: solid 3px var(--fore);
+  height: 700px;
+  color: var(--fore);
+}
+.me::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 450px;
+  height: 3px;
+  background: var(--fore);
+  content: "";
+}
+.me-title {
+  writing-mode: vertical-rl;
+  height: 92%;
+  margin: auto 0;
+  margin-left: 200px;
+}
+.me-content {
+  width: 40%;
+  padding: 50px;
+  /* border-radius: 3px; */
+  margin: auto 0;
+}
+.me-content h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+h3 + P {
+  margin-bottom: 50%;
+}
+.github-logo {
+  width: 100%;
+  height: auto;
+}
+.insta-logo {
+  width: 100%;
+  height: auto;
+}
+.twitter-logo {
+  width: 100%;
+  height: auto;
+}
+.arrow {
+  width: 30%;
+  height: auto;
+  float: right;
+}
+.socials {
+  display: flex;
+}
+.socials a {
+  width: 40px;
+  display: inline-block;
+  margin: auto 10px;
+}
+.socials a:hover {
+  transform: scale(1.05);
+}
+.me-content-links {
+  display: flex;
+  justify-content: space-between;
+}
+#dlcv {
+  font-size: 0.8rem;
+  position: absolute;
+  /* opacity: 0.5 !important; */
+  display: none;
+  animation: reveal 300ms ease;
+  color: var(--fore);
+  text-shadow: 1px 1px 5px var(--back);
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  80% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.dlcv {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- section skills --- 
+    =========================================================================== */
+.skills {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--fore);
+  height: 50vh;
+  border-right: solid 3px var(--fore);
+  padding: 80px;
+  margin: 400px auto;
+}
+.skills::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 450px;
+  height: 3px;
+  background: var(--fore);
+  content: "";
+}
+.skills-title {
+  writing-mode: vertical-rl;
+  height: 527px;
+  margin-right: 100px;
+}
+.skills-content {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  /* height: 220px; */
+}
+.skills-content p {
+  font-size: 0.9rem;
+}
+.rot-skills {
+  writing-mode: vertical-rl;
+}
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  padding: 15px;
+}
+.skills-container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.arrow2 {
+  width: 10%;
+  height: auto;
+  float: right;
+}
+
+/* --- section portfolio --- 
+    =========================================================================== */
+.portfolio {
+  margin: 400px auto;
+  color: var(--fore);
+}
+.portfolio-title-content {
+  display: flex;
+}
+.portfolio-title {
+  width: 85%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0 0 20px 0;
+}
+.empty-title-block {
+  width: 15%;
+  height: 220px;
+  outline: 3px solid var(--fore);
+  margin-bottom: 3px;
+}
+
+.barres {
+  width: 135%;
+  height: auto;
+  position: relative;
+  left: -20px;
+  top: -30px;
+}
+.portfolio-content {
+  display: flex;
+  flex-wrap: wrap;
+  outline: 3px solid var(--fore);
+  margin-bottom: 3px;
+}
+.main-block,
+.main-block2 {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 100px;
+  padding-bottom: 30px;
+}
+.main-block ul {
+  font-weight: 100;
+  position: absolute;
+  right: 20px;
+  text-align: end;
+  color: var(--back);
+  font-family: "FONTSPRING DEMO - Quincy CF";
+}
+.portfolio-content-hover {
+  background-color: var(--fore);
+  color: var(--back);
+  transition: 500ms ease-in-out;
+}
+.portfolio-content-hover-nope {
+  background-color: var(--back);
+  color: var(--back);
+}
+.main-block2 {
+  justify-content: end;
+  padding-right: 100px;
+}
+.main-block h2,
+.main-block2 h2 {
+  font-family: "SF UI text", sans-serif;
+  opacity: 0.2;
+}
+.main-block h3,
+.main-block2 h3 {
+  font-family: "FONTSPRING DEMO - Quincy CF";
+  text-shadow: var(--back) 1px 0 10px;
+}
+.main-block2 ul {
+  font-family: "FONTSPRING DEMO - Quincy CF";
+  font-weight: 100;
+  position: absolute;
+  left: 20px;
+  color: var(--back);
+}
+.link-block {
+  height: 50px; /*tes visuel*/
+  width: 20%;
+}
+.empty-block {
+  outline: 3px solid var(--fore);
+  height: 50px; /*test visuel*/
+  width: 80%;
+  background-color: var(--back);
+  color: var(--back);
+  /* background-color: var(--fore); */
+}
+.portfolio-arrow {
+  float: right;
+  width: 18%;
+  height: auto;
+}
+
+/* RESPONSIVE version mobile 400px*/
+@media screen and (max-width: 768px) {
+  /* section me */
+  .me {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-left: solid 0px rgb(255, 255, 255);
+  }
+  .me::after {
+    display: none;
+  }
+  .me-title {
+    margin: 0;
+    writing-mode: horizontal-tb;
+    height: auto;
+  }
+  .me-content {
+    width: 100%;
+  }
+
+  /* section skills */
+  .skills {
+    flex-direction: column-reverse;
+    border-right: solid 0px rgb(255, 255, 255);
+    padding: 80px 0;
+    height: auto;
+  }
+  .skills::after {
+    display: none;
+  }
+  .skills-title {
+    margin: 0;
+    writing-mode: horizontal-tb;
+    height: auto;
+    text-align: center;
+    align-items: center;
+  }
+  .skills-content {
+    flex-direction: column;
+    width: 100%;
+  }
+  .skills-content p {
+    font-size: 1.3rem;
+  }
+  .skills-container {
+    width: auto;
+    margin: 50px 0;
+  }
+  .skills-container-right {
+    width: 80%;
+  }
 }

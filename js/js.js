@@ -66,12 +66,12 @@ function navMenu() {
 checkbox.addEventListener("click", (event) => {
   if (checkbox.classList.contains("on")) {
     checkbox.setAttribute("aria-checked", "false");
-    root.style.setProperty("--white", "#fff");
-    root.style.setProperty("--dark", "#202020");
+    root.style.setProperty("--fore", "#fff");
+    root.style.setProperty("--back", "#202020");
   } else {
     checkbox.setAttribute("aria-checked", "true");
-    root.style.setProperty("--white", "#372703");
-    root.style.setProperty("--dark", "#feefd0da");
+    root.style.setProperty("--fore", "#372703");
+    root.style.setProperty("--back", "#feefd0da");
   }
   checkbox.classList.toggle("on");
 });
