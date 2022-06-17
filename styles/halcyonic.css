@@ -1,6 +1,6 @@
 :root {
-  --white: #fff;
-  --dark: #202020;
+  --fore: #fff;
+  --back: #202020;
   /* --cream: #feefd0da;
   --brown: #372703; */
 }
@@ -8,11 +8,11 @@ body {
   padding: 0;
   margin: 0;
   max-height: 100vh;
-  color: var(--white);
+  color: var(--fore);
 }
 .darker {
-  color: var(--white);
-  background-color: var(--dark);
+  color: var(--fore);
+  background-color: var(--back);
 }
 h1 {
   font-size: 6.5rem;
@@ -25,7 +25,7 @@ h1 {
   margin: auto;
 }
 .dark {
-  color: var(--dark);
+  color: var(--back);
 }
 .flex {
   display: flex;
@@ -39,12 +39,7 @@ h1 {
 .vertical {
   writing-mode: vertical-rl;
 }
-.relative {
-  position: relative;
-}
-.absolute {
-  position: absolute;
-}
+
 .w-10p {
   width: 10%;
 }
@@ -80,7 +75,7 @@ h1 {
   justify-content: center;
 }
 .outline-white {
-  outline: solid var(--white) 2px;
+  outline: solid var(--fore) 2px;
 }
 .block1 {
   height: 6vh;
@@ -111,5 +106,5 @@ h1 {
   height: 14vh;
   width: 30%;
   margin-top: 2px;
-  background-color: var(--white);
+  background-color: var(--fore);
 }

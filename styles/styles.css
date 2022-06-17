@@ -30,6 +30,12 @@ html {
 .small-caps {
   font-variant: small-caps;
 }
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
 
 /* --- polices --- */
 h2 {
@@ -80,7 +86,7 @@ span {
 } */
 .menu:hover .bar {
   transform: scale(110%);
-  transition: 350ms ease;
+  transition: 250ms ease-in-out;
 }
 .menu-links {
   /* display: none; */
@@ -94,7 +100,7 @@ span {
   left: 150px;
 }
 .bar {
-  transition: 500ms ease-in-out;
+  transition: 150ms ease-in-out;
 }
 .bar:nth-child(2) {
   width: 80px;
@@ -361,6 +367,7 @@ h3 + P {
   right: 20px;
   text-align: end;
   color: #202020;
+  font-family: "FONTSPRING DEMO - Quincy CF";
 }
 .portfolio-content-hover {
   background-color: #feefd0da;
@@ -381,7 +388,18 @@ h3 + P {
   padding-right: 100px;
   padding-bottom: 30px;
 }
+.main-block h2,
+.main-block2 h2 {
+  font-family: "SF UI text", sans-serif;
+  opacity: 0.2;
+}
+.main-block h3,
+.main-block2 h3 {
+  font-family: "FONTSPRING DEMO - Quincy CF";
+  text-shadow: #202020 1px 0 10px;
+}
 .main-block2 ul {
+  font-family: "FONTSPRING DEMO - Quincy CF";
   font-weight: 100;
   position: absolute;
   left: 20px;
