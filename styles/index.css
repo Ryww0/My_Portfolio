@@ -333,12 +333,17 @@ h3 + P {
 
 /* RESPONSIVE version mobile 400px*/
 @media screen and (max-width: 768px) {
+  /* header */
+  header {
+    height: 60vh;
+  }
   /* section me */
   .me {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    border-left: solid 0px rgb(255, 255, 255);
+    border-left: solid 0px var(--fore);
+    margin: 60px auto;
   }
   .me::after {
     display: none;
@@ -355,9 +360,10 @@ h3 + P {
   /* section skills */
   .skills {
     flex-direction: column-reverse;
-    border-right: solid 0px rgb(255, 255, 255);
+    border-right: solid 0px var(--fore);
     padding: 80px 0;
     height: auto;
+    margin: 60px auto;
   }
   .skills::after {
     display: none;
