@@ -1,20 +1,18 @@
 :root {
   --white: #fff;
   --dark: #202020;
-  --cream: #feefd0da;
+  /* --cream: #feefd0da;
+  --brown: #372703; */
 }
 body {
   padding: 0;
   margin: 0;
   max-height: 100vh;
+  color: var(--white);
 }
 .darker {
   color: var(--white);
   background-color: var(--dark);
-}
-.creamer {
-  background-color: var(--cream);
-  color: var(--dark);
 }
 h1 {
   font-size: 6.5rem;

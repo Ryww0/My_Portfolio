@@ -448,9 +448,9 @@ footer {
   padding: 4px;
   display: flex;
   align-items: center;
-  background-color: #49454f;
+  background-color: #feefd0da;
   border-radius: 24px;
-  border: solid 2px #938f99;
+  border: solid 2px #372703;
   transition: border-color 200ms, background-color 200ms;
   cursor: pointer;
 }
@@ -460,15 +460,15 @@ footer {
   width: 16px;
   height: 16px;
   border-radius: 12px;
-  background-color: #938f99;
+  background-color: #372703;
   transition: width 200ms, height 200ms, transform 200ms, background-color 200ms;
 }
 .checkbox.on {
-  border-color: #d0bcff;
-  background-color: #d0bcff;
+  border-color: #202020;
+  background-color: #202020;
 }
 .checkbox.on::before {
-  background-color: #381e72;
+  background-color: #fff;
   width: 24px;
   height: 24px;
   transform: translateX(18px);

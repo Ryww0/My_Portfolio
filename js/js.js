@@ -64,20 +64,24 @@ function navMenu() {
 
 //
 const checkbox = document.querySelector("button");
+let root = document.documentElement;
 
 checkbox.addEventListener("click", (event) => {
   if (checkbox.classList.contains("on")) {
     checkbox.setAttribute("aria-checked", "false");
+    root.style.setProperty("--white", "#fff");
+    root.style.setProperty("--dark", "#202020");
   } else {
     checkbox.setAttribute("aria-checked", "true");
+    root.style.setProperty("--white", "#372703");
+    root.style.setProperty("--dark", "#feefd0da");
   }
   checkbox.classList.toggle("on");
 });
 
-// FIXME
-// function switch() {
-//   if(checkbox.attributes('aria-checked', "true")){
-//     document.body.classList.add('darker')
-//     document.body.classList.add('darker')
+//FIXME
+// checkbox.addEventListener("click", function () {
+//   if (root.style.getPropertyValue("--white", "#372703")) {
+//   } else {
 //   }
-// }
+// });
