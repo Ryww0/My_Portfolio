@@ -1,4 +1,6 @@
 // hover DLCV
+// const arrowDLCV = querySelector(".arrow-dlcv");
+// let blockDLCV = querySelector(".dlcv");
 let txt = document.getElementById("dlcv");
 // Hover portfolio
 let newStyle = document.querySelectorAll(".portfolio-content");
@@ -12,9 +14,14 @@ const checkbox = document.querySelector("button");
 let root = document.documentElement;
 
 // Hover DLCV
-function chbg(color) {
-  document.getElementById("me-content").style.backgroundColor = color;
-}
+// FIXME
+// function chbg(color) {
+//   document.getElementById("me-content").style.backgroundColor = color;
+// }
+// arrowDLCV.addEventListener("mouseenter", (event) => {
+//   blockDLCV.style.backgroundColor = --fore;
+// });
+
 function show() {
   if (txt) {
     txt.style.display = "inline-block";
