@@ -241,6 +241,7 @@ h3 + P {
   align-items: flex-end;
   padding-left: 100px;
   padding-bottom: 30px;
+  cursor: pointer;
 }
 .main-block ul {
   font-weight: 100;
@@ -273,6 +274,34 @@ h3 + P {
   font-family: "FONTSPRING DEMO - Quincy CF";
   text-shadow: var(--back) 1px 0 10px;
 }
+.main-block h3 {
+  animation: floatToLeft 5s ease-in-out infinite;
+}
+.main-block2 h3 {
+  animation: floatToRight 5s ease-in-out infinite;
+}
+@keyframes floatToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes floatToRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .main-block2 ul {
   font-family: "FONTSPRING DEMO - Quincy CF";
   font-weight: 100;
@@ -283,6 +312,7 @@ h3 + P {
 .link-block {
   height: 50px; /*tes visuel*/
   width: 20%;
+  cursor: pointer;
 }
 .empty-block {
   outline: 3px solid var(--fore);
