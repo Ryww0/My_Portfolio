@@ -1,9 +1,9 @@
 // hover DLCV
-const arrowDLCV = querySelector(".arrow-dlcv");
-const blockDLCV = querySelector(".dlcv");
+// const arrowDLCV = querySelector(".arrow-dlcv");
+// const blockDLCV = querySelector(".dlcv");
 // let rootS = document.querySelector(":root");
-let rootStyles = getComputedStyle(root);
-const foreColor = rootStyles.getPropertyValue("--fore");
+// let rootStyles = getComputedStyle(root);
+// const foreColor = rootStyles.getPropertyValue("--fore");
 let txt = document.getElementById("dlcv");
 // Hover portfolio
 let newStyle = document.querySelectorAll(".portfolio-content");

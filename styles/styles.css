@@ -86,6 +86,8 @@ p {
 /* ================================================================== */
 nav {
   position: fixed;
+  top: 0;
+  left: 0;
   /* background-color: none; */
   /* background: #000; */
   height: 100vh;

@@ -11,7 +11,7 @@ header {
 /* --- élèments du header --- */
 .header-text {
   font-variant: small-caps;
-  color: var(--fore);
+  color: #fff;
   text-align: center; /*justification du texte*/
   vertical-align: middle;
   line-height: 1.2;
