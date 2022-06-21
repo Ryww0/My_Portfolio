@@ -344,6 +344,7 @@ h3 + P {
     align-items: center;
     border-left: solid 0px var(--fore);
     margin: 60px auto;
+    height: 550px;
   }
   .me::after {
     display: none;
@@ -388,5 +389,33 @@ h3 + P {
   }
   .skills-container-right {
     width: 80%;
+  }
+
+  /* section portfolio */
+  .portfolio {
+    margin: 60px auto;
+  }
+  .portfolio-title-content {
+    align-items: flex-end;
+  }
+  .empty-title-block {
+    height: 50px;
+  }
+  .main-block {
+    padding-left: 20px;
+  }
+  .main-block2 {
+    padding-right: 20px;
+  }
+  .main-block ul,
+  .main-block2 ul {
+    color: var(--fore);
+    font-size: 1.5rem;
+  }
+  .link-block {
+    width: 85%;
+  }
+  .empty-block {
+    width: 15%;
   }
 }
