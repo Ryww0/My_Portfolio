@@ -1,6 +1,9 @@
 // hover DLCV
-// const arrowDLCV = querySelector(".arrow-dlcv");
-// let blockDLCV = querySelector(".dlcv");
+const arrowDLCV = querySelector(".arrow-dlcv");
+const blockDLCV = querySelector(".dlcv");
+// let rootS = document.querySelector(":root");
+let rootStyles = getComputedStyle(root);
+const foreColor = rootStyles.getPropertyValue("--fore");
 let txt = document.getElementById("dlcv");
 // Hover portfolio
 let newStyle = document.querySelectorAll(".portfolio-content");
@@ -18,8 +21,8 @@ let root = document.documentElement;
 // function chbg(color) {
 //   document.getElementById("me-content").style.backgroundColor = color;
 // }
-// arrowDLCV.addEventListener("mouseenter", (event) => {
-//   blockDLCV.style.backgroundColor = --fore;
+// arrowDLCV.addEventListener("mouseenter", () => {
+//   blockDLCV.style.backgroundColor = foreColor;
 // });
 
 function show() {
