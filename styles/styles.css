@@ -15,6 +15,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color: var(--fore);
 }
 body {
   font-family: "SF UI text", sans-serif;
@@ -255,6 +256,7 @@ footer {
   }
   .bar {
     width: 10px;
+    height: 3px;
   }
   .bar:nth-child(2) {
     width: 15px;
@@ -265,6 +267,12 @@ footer {
   }
   .right-part {
     width: 25%;
+  }
+  .menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 }
 

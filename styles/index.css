@@ -337,6 +337,7 @@ h3 + P {
   header {
     height: 60vh;
   }
+
   /* section me */
   .me {
     flex-direction: column;
@@ -356,6 +357,12 @@ h3 + P {
   }
   .me-content {
     width: 100%;
+  }
+  .socials a {
+    width: 20px;
+  }
+  .arrow {
+    width: 20%;
   }
 
   /* section skills */
@@ -398,6 +405,9 @@ h3 + P {
   .portfolio-title-content {
     align-items: flex-end;
   }
+  .portfolio-arrow {
+    width: 13%;
+  }
   .empty-title-block {
     height: 50px;
   }
@@ -411,6 +421,9 @@ h3 + P {
   .main-block2 ul {
     color: var(--fore);
     font-size: 1.5rem;
+  }
+  .main-block ul {
+    right: -215px;
   }
   .link-block {
     width: 85%;
